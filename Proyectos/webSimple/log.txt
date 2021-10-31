@@ -1,0 +1,19 @@
+Proyecto primera app 
+    - Para ello usamos npm init --yes
+        crea un archivo package.json que contiene la configuracion inicial
+    - Luego instalamos los modulos que vamos a utilizar durante la app
+        express
+        ejs
+        morgan
+    - Usamos la prueba de que funciona le agregamos un logs
+    - Agregamos dos scripts dentro de package.json
+        "start": "node src"
+        "dev": "nodemon src"
+    - Para utilizar el codigo anterior agregamos el modulo nodemon, npm nodemon -D, la d mayuscula, es para que no lo agregue como dependencia, sino para dependencia de desarrollo
+    - Que hace basicamente realiza un reinicio de la consola, para cuando realizamos una modificacion en el codigo, no se tenga que reiniciar la consola de forma manual
+      lo que facilita la operacion
+    - Agregamos modulo path, lo que nos ayuda a buscar el directorio dentro de la ubicacion donde estemos
+    - A su vez, creamos una carpeta views dentro de src, llamada views, donde colocamos el index.html
+    - Luego cargamos el modulo integrado ejs de una forma distinta ya que el no es una dependencia
+      app.set('view engine', 'ejs');
+      renombramos el index.html a index.ejs
