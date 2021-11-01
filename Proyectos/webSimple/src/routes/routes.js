@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 
 // reemplazamos app por router
 router.get('/contact', (req, res) => {
-    res.render('contact.html', {title: 'contact page'});
+    res.render('contact.html', {title: 'Contact Page'});
 });
 
 // exportamos el modulo
