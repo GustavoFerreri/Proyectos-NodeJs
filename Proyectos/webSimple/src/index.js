@@ -17,6 +17,7 @@ app.set('view engine', 'ejs');
 app.use(require('./routes/routes'));
 
 // static files
+app.use(express.static(path.join(__dirname, 'public')));
 
 // listenining server
 app.listen(app.get('port'), () => {
